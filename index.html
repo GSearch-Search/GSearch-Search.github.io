@@ -97,12 +97,15 @@
     background: skyblue;
  color: white;
   text-align: center;
- padding: 7px;
+ padding: 12 27px;
  border-radius: 12px;
     top: 12%;
   }
 #searchButton:hover{
-  background: #79fce2;
+ background: #79fce2;
+}
+#searchButton:hover::after{
+  content: "";
 }
   html{
     background-image: url("background/IMG_0828.jpeg")
@@ -142,7 +145,7 @@
   <center>
   <form id="form1" action="/search">
 <input id="sbox"  id="s" name="q" type="text">
-<input id="searchButton" type="submit" value="検索" />
+<input id="searchButton" type="submit" value="検索"/>
     </form>
   </center>
     <header>
